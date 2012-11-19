@@ -16,8 +16,16 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
-gem 'jquery-rails', '2.0.2'
-
 group :production do
   gem 'pg', '0.12.2'
 end
+
+group :test do
+  gem "rspec"
+  gem "rspec-rails"
+  gem "factory_girl"
+end
+
+gem 'jquery-rails', '2.0.2'
+gem 'haml-rails'
+
